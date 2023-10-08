@@ -104,9 +104,26 @@
 //  показати alert з рядком "Загальна сума введених чисел дорівнює [число]."
 // Робити перевірку,що користувач ввів саме число, а не довільний набір символів не потрібно.
 
-// const number = Number(prompt("Введіть число"));
+// let number = Number(prompt("Введіть число"));
 
+// let total = 0;
 
+// let bulianNum = false;
+// do {
+//     if (number) {
+//         bulianNum = true;
+//         total = total + number;
+//         number = Number(prompt("Введіть число"));
+//     } else {
+//         bulianNum = false;
+//         const leter = `Загальна сума введених чисел дорівнює ${total}.`;
+//         console.log(leter);
+        
+
+//     }
+
+// } while (bulianNum)
+ 
 
 
 
@@ -129,9 +146,38 @@
 // Python Гвідо ван Россум
 
 // const author = prompt('Please type in the programming language name').toLowerCase();
+// const autorBook = ["php","c#","swift","js","java","python"];
+// switch (author) {
+//     case autorBook[0]:
+//         console.log("Расмус Лердорф");
+//         break;
+//     case autorBook[1]:
+//         console.log("група інженерів компанії Microsoft під керівництвом Андерса Хейлсберга та Скотта Вільтаумота");
+//         break;
+//     case autorBook[2]:
+//         console.log("Кріс Латтнер");
+//         break;
+//     case autorBook[3]:
+//         console.log("Брендан Ейх");
+//         break;
+//     case autorBook[4]:
+//         console.log("Джеймс Гослінг");
+//         break;
+//     case autorBook[5]:
+//         console.log("Гвідо ван Россум");
+//         break;
+//     default:
+//         console.log("нема автора")
+
+// }
 
 
 
-// Запитати у користувача ім’я, пошту , телефон, 
+// Запитати у користувача ім’я, пошту , телефон,
 // та показати у консолі "користувач __ використовує  __ пошту __ телефон"
+// const userName = prompt("Введіть своє ім'я"); 
+// const userMail = prompt("Введіть свою почту");
+// const userPhone = prompt("Введіть свій телефон");
 
+// const messeng = `користувач ${userName} використовує ${userMail} пошту ${userPhone} телефон`;
+// alert(messeng);
