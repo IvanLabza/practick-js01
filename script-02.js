@@ -61,23 +61,23 @@
 // повертає всі числа, які діляться на дільник.
 // Перший аргумент – це масив чисел, а другий – дільник.
 
-const x = [5,66,22,53,85,100,155];
-const y = 5;
+// const x = [5,66,22,53,85,100,155];
+// const y = 5;
 
 
-function foo(x, y) {
-    const arr = [];
-    for (const argument of x) {
-        if (argument % y === 0) {
-            arr.pop(argument);
-        }
+// function foo(x, y) {
+//     const arr = [];
+//     for (const argument of x) {
+//         if (argument % y === 0) {
+//             arr.push(argument);
+//         }
       
-    }
-    console.log(arr);
+//     }
+//     console.log(arr);
     
-}
+// }
 
-foo(x, y);
+// foo(x, y);
 
 // Паліндром
 
@@ -85,6 +85,20 @@ foo(x, y);
 //читається як у звичному напрямку, так і у зворотному.
 //Наприклад, "Anna" - це
 //паліндром, а "table" і "John" - ні.
+
+// const name = "table";
+
+// function foo(name) {
+//     const userName = name.split('').reverse().join('');
+//     if (userName === name) {
+//         console.log("Паліндром")
+//     } else {
+//         console.log("ні")
+//     }
+//     }
+// foo(name);
+
+
 
 
 // FizzBuzz
@@ -96,6 +110,18 @@ foo(x, y);
 // виведення fizzbuzz замість чисел, кратних як 3, і 5.
 
 
+// const n = prompt("number");
+
+
+// for (const number = 1; number <= n; number++) {
+//     if (number % 3 === 0) {
+//         console.log("fizz");
+//     } else if (number % 5 === 0) {
+//         console.log("buzz");
+//   }
+    
+// }
+
 
 
 // Пошук голосних
@@ -103,6 +129,40 @@ foo(x, y);
 //Потрібно написати функцію, яка приймає рядок як аргумент і повертає
 //кількість голосних, які містяться в рядку.
 //Голосними є "a", "e", "i", "o", "u".
+
+
+// const vocal = ["a", "e", "i", "o", "u"];
+// const messeng = "orem, ipsum dolor sit amet consectetur adipisicing elit. Maiores sapiente tempore debitis facilis ex recusandae, assumenda repellendus dicta voluptas quibusdam, magni consequuntur? Aliquid ipsam impedit esse, a saepe magnam officiis.";
+// function foo(vocal, messeng) {
+//     const arr = messeng.split("");
+   
+        
+//     const x = 0;
+//     console.log(x)
+//         if (arr.includes(vocal)) {
+//             x += 1;
+//         }
+
+//     return x;
+// }
+
+// foo(vocal, messeng);
+// console.log(foo(vocal, messeng));
+
+//  function fuString(string) {
+//    const newArray = ["a", "e", "i", "o", "u"];
+//    let quantity = 0;
+
+//    for (const str of string.toLowerCase()) {
+//      if (newArray.includes(str)) {
+//       quantity += 1;
+//      }
+//    }
+//      return quantity;
+//  }
+
+// fuString("orem, ipsum dolor sit amet consectetur adipisicing elit. Maiores sapiente tempore debitis facilis ex recusandae, assumenda repellendus dicta voluptas quibusdam, magni consequuntur? Aliquid ipsam impedit esse, a saepe magnam officiis");
+// console.log(fuString("orem, ipsum dolor sit amet consectetur adipisicing elit. Maiores sapiente tempore debitis facilis ex recusandae, assumenda repellendus dicta voluptas quibusdam, magni consequuntur? Aliquid ipsam impedit esse, a saepe magnam officiis"));
 
 
 
