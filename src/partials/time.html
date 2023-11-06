@@ -14,24 +14,23 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-    <title>01. JS Base</title>
-    <link rel="stylesheet" href="./sass/style.css" />
+    <title>03. JavaScript детальней</title>
   </head>
   <body class="bg-dark text-light">
-    <ul>
-      <li><a href="./partials/example.html">калькулятор</a></li>
-      <li>
-        <a href="./partials/index.html">заметки</a>
-      </li>
-      <li>
-        <a href="./partials/time.html">время</a>
-      </li>
-      <li></li>
-      <li></li>
-    </ul>
+    <div class="container w-50 pt-5">
+      <h1>Дата и время</h1>
 
-    <script src="./index.js"></script>
-    <script src="./js/app.js"></script>
-    <script src="./js/calc.js"></script>
+      <div class="text-bg-light p-3 text-center rounded">
+        <h3 id="output">12:12:12</h3>
+
+        <div class="d-flex mb-2 justify-content-around">
+          <button class="btn btn-small btn-primary" id="full">Полная</button>
+          <button class="btn btn-small btn-success" id="date">Дата</button>
+          <button class="btn btn-small btn-danger" id="time">Время</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/time.js"></script>
   </body>
 </html>

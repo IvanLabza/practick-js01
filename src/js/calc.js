@@ -2,7 +2,7 @@ const velResult = document.getElementById("result");
 
 const inputFirst = document.getElementById("input1");
 
-const inputToo = document.getElementById('input2');
+const inputToo = document.getElementById("input2");
 
 const submitResult = document.getElementById("submit");
 
@@ -14,53 +14,48 @@ const delBtn = document.getElementById("del");
 
 const mngBtn = document.getElementById("umnag");
 
-
 let action = "+";
 
-
 plusBtn.onclick = () => {
-    action = "+";
-}
+  action = "+";
+};
 
 minusBtn.onclick = () => {
-    action = "-";
-}
-
+  action = "-";
+};
 
 delBtn.onclick = () => {
-    action = "/";
-}
+  action = "/";
+};
 
 mngBtn.onclick = () => {
-    action = "*";
-}
+  action = "*";
+};
 
-
-function colorResult(result){
-    if (result < 0) {
-        velResult.style.color = "red";
-
-    } else {
-        velResult.style.color = "green";
-    }
+function colorResult(result) {
+  if (result < 0) {
+    velResult.style.color = "red";
+  } else {
+    velResult.style.color = "green";
+  }
 }
 
 submitResult.onclick = () => {
-
-    if (action === "+") {
-        const sum = velResult.textContent = Number(inputFirst.value) + Number(inputToo.value);
-        colorResult(sum);
-    } else if(action === "-") {
-        const sum = velResult.textContent = Number(inputFirst.value) - Number(inputToo.value);
-        colorResult(sum);
-    } else if (action === "/") {
-        const sum = velResult.textContent = Number(inputFirst.value) / Number(inputToo.value);
-         colorResult(sum);
-    } else if (action === "*") {
-        const sum = velResult.textContent = Number(inputFirst.value) * Number(inputToo.value);
-         colorResult(sum);
-    }
-    
-   
-    
-}
+  if (action === "+") {
+    const sum = (velResult.textContent =
+      Number(inputFirst.value) + Number(inputToo.value));
+    colorResult(sum);
+  } else if (action === "-") {
+    const sum = (velResult.textContent =
+      Number(inputFirst.value) - Number(inputToo.value));
+    colorResult(sum);
+  } else if (action === "/") {
+    const sum = (velResult.textContent =
+      Number(inputFirst.value) / Number(inputToo.value));
+    colorResult(sum);
+  } else if (action === "*") {
+    const sum = (velResult.textContent =
+      Number(inputFirst.value) * Number(inputToo.value));
+    colorResult(sum);
+  }
+};
